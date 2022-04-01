@@ -1,0 +1,121 @@
+html {
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-family: Merriweather, serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: .9rem;
+  font-style: italic;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: normal;
+  margin: 1.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h2,
+p {
+  color: white;
+  z-index: 1;
+  align-self: flex-end;
+}
+
+main {
+  width: 100%;
+}
+
+main .banner-wrap {
+  position: relative;
+  max-height: 705px;
+  margin: 0 0 5px;
+}
+
+main .banner-wrap .banner {
+  width: 100%;
+}
+
+main .banner-wrap > h2,
+main .banner-wrap > p {
+  position: absolute;
+  left: 20px;
+}
+
+main .banner-wrap > h2 {
+  bottom: 44px;
+}
+
+main .banner-wrap > p {
+  bottom: 18px;
+  font-size: 1rem;
+}
+
+main nav {
+  display: grid;
+  gap: .75rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "banner1 banner2 banner3"
+    "text1 text2 text3";
+  font-weight: bold;
+}
+
+main nav figure {
+  margin: 0;
+}
+
+main nav figure img {
+  width: 100%;
+}
+
+main nav figure figcaption {
+  font-size: 1.5rem;
+  margin: 1.2rem 0 0 1.5rem;
+}
+
+main nav figure:nth-of-type(1) {
+  grid-area: banner1;
+}
+
+main nav figure:nth-of-type(2) {
+  grid-area: banner2;
+}
+
+main nav figure:nth-of-type(3) {
+  grid-area: banner3;
+}
+
+main nav dl {
+  margin: 0 0 0 1.5rem;
+}
+
+main nav dl > dd {
+  margin: .1rem 0 0 2ch;
+  font-style: normal;
+}
+
+main nav dl:nth-of-type(1) {
+  grid-area: text1;
+}
+
+main nav dl:nth-of-type(2) {
+  grid-area: text2;
+}
+
+main nav dl:nth-of-type(3) {
+  grid-area: text3;
+}
